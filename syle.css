@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    margin: 10px;
+}
+
+.imageContainer {
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+}
+
+.imageContainer img {
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.textContainer span {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.textContainer h1{
+    font-family: "Fraunces", serif;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+}
+
+.textContainer p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+}
+
+.activePrice {
+    font-family: "Fraunces", serif;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 25px;
+    color: hsl(158, 36%, 37%);
+}
+
+.passivePrice {
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    background: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button:hover{
+    background: hsl(158, 42%, 18%);
+    transition: ease-in-out 0.5s;
+    font-style: bold;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        background: hsl(0, 0%, 100%);
+        width: 500px;
+        border-radius: 10px;
+        height: 420px;
+    }
+
+    .imageContainer {
+        border-radius: 10px 0px 0px 10px;
+        width: 250px;
+        height: 420px;
+    }
+
+    .imageContainer img {
+        width: 250px;
+        border-radius: 10px 0px 0px 10px;
+        height: 420px;
+    }
+}
